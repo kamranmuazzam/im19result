@@ -12,15 +12,19 @@ function App() {
   const [resultColor, setResultColor] = createSignal("");
   const [messegeColor, setMessegeColor] = createSignal("");
   const [profNumber, setProf] = createSignal(124);
+  const [loadDash, setLoadDash] = createSignal("");
 
   async function fetchResult() {
     console.log("in fetch result");
-    setName("---");
-    setExamRoll("---");
-    setResultStatus("---");
-    setResult("---");
+    setName(loadDash());
+    setExamRoll(loadDash());
+    setResultStatus(loadDash());
+    setResult(loadDash());
     setResultColor("");
     setMessegeColor("");
+    // set loading
+    // dashArray = ["-", "--", "---"];
+
     try {
       const r = parseInt(rollNumber()) + 9775;
       const rr = r.toString();
@@ -123,7 +127,40 @@ function App() {
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          fetchResult();
+          let dash = ["-", "--", "---"];
+          let index = 0;
+
+          function www() {
+            countDown();
+          }
+
+          let countDown = () => {
+            let seconds = 30; // Start countdown from 10 seconds
+            const timer = setInterval(() => {
+              // console.clear(); // Clear console before printing new dash
+              console.log(dash[index]);
+              setLoadDash(dash[index]);
+              index = (index + 1) % dash.length;
+              seconds--;
+              if (seconds <= 0 || name()) {
+                clearInterval(timer);
+              }
+              if (seconds <= 0 && !name()) {
+                clearInterval(timer);
+                setResult("Timed Out, Checking again..");
+                requestFunction();
+              }
+            }, 1000);
+          };
+
+          let requestFunction = async () => {
+            countDown();
+            setTimeout(() => {
+              fetchResult();
+            }, 10); // Simulating 10 seconds delay for fetchResult() to complete
+          };
+
+          requestFunction();
         }}
       >
         {" Roll Number "}
@@ -137,13 +174,15 @@ function App() {
           Check
         </button>
       </form>
-      <p>Roll Number: {rollNumber()}</p>
       {/* <div innerHTML={result()}></div> */}
-      <div>
-        <ul style={{ background: messegeColor() }}>{result()}</ul>
-        <ul>Name : {name()}</ul>
-        <ul>Exam Roll : {examRoll()}</ul>
-        <ul style={{ background: resultColor() }}>Result : {resultStatus()}</ul>
+      <div style={{ background: resultColor() }}>
+        <div style={{ background: messegeColor() }}>
+          <p>Roll Number: {rollNumber()}</p>
+          <ul>{result()}</ul>
+          <ul>Name : {!name() ? loadDash() : name()}</ul>
+          <ul>Exam Roll : {!examRoll() ? loadDash() : examRoll()}</ul>
+          <ul>Result : {!resultStatus() ? loadDash() : resultStatus()}</ul>
+        </div>
       </div>
     </div>
   );
