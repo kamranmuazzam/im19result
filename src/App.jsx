@@ -80,6 +80,7 @@ function App() {
 
   return (
     <div>
+      version 0.7.0, hehe
       <div
         style={{
           display: "row",
