@@ -3,11 +3,11 @@
     "beforeDevCommand": "yarn dev",
     "beforeBuildCommand": "yarn build",
     "devPath": "http://localhost:1420",
-    "distDir": "../dist"
+    "distDir": "../dist/{{target}}/{{arch}}/{{current_version}}"
   },
   "package": {
     "productName": "IM 19 results",
-    "version": "0.0.0"
+    "version": "0.1.0"
   },
   "tauri": {
     "allowlist": {
