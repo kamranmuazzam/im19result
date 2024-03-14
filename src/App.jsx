@@ -1,8 +1,7 @@
 import { createSignal } from "solid-js";
 import { invoke } from "@tauri-apps/api/tauri";
 import "./App.css";
-// import { resultProcessor } from "./resultProcessorr.js";
-// resultProcessor();
+
 function App() {
   const [rollNumber, setRollNumber] = createSignal("");
   const [result, setResult] = createSignal("");
@@ -22,8 +21,6 @@ function App() {
     setResult(loadDash());
     setResultColor("");
     setMessegeColor("");
-    // set loading
-    // dashArray = ["-", "--", "---"];
 
     try {
       const r = parseInt(rollNumber()) + 9775;
@@ -82,10 +79,10 @@ function App() {
   }
 
   return (
-    <div className="">
+    <div>
       <div
         style={{
-          display: "flex",
+          display: "row",
           flexDirection: "row",
           justifyContent: "center",
         }}
@@ -130,14 +127,9 @@ function App() {
           let dash = ["-", "--", "---"];
           let index = 0;
 
-          function www() {
-            countDown();
-          }
-
           let countDown = () => {
-            let seconds = 30; // Start countdown from 10 seconds
+            let seconds = 15; // Seconds upto which one fetch is given time
             const timer = setInterval(() => {
-              // console.clear(); // Clear console before printing new dash
               console.log(dash[index]);
               setLoadDash(dash[index]);
               index = (index + 1) % dash.length;

@@ -1,7 +1,9 @@
 import { createSignal } from "solid-js";
 
-function ProfButtons() {
-  const [profNumber, setProf] = createSignal(124);
+export default function ProfButtons({ profNumber, setProf }) {
+  const buttonStyle = (number) => ({
+    background: profNumber() === number ? "green" : "",
+  });
 
   return (
     <div
@@ -11,36 +13,18 @@ function ProfButtons() {
         justifyContent: "center",
       }}
     >
-      <button
-        style={{ background: profNumber() === 124 ? "green" : "" }}
-        onClick={() => {
-          setProf(124);
-        }}
-      >
+      <button style={buttonStyle(124)} onClick={() => setProf(124)}>
         1st Prof
       </button>
-      <button
-        style={{ background: profNumber() === 365 ? "green" : "" }}
-        onClick={() => setProf(365)}
-      >
+      <button style={buttonStyle(365)} onClick={() => setProf(365)}>
         2nd Prof
       </button>
-      <button
-        style={{ background: profNumber() === 726 ? "green" : "" }}
-        onClick={() => setProf(726)}
-      >
+      <button style={buttonStyle(726)} onClick={() => setProf(726)}>
         3rd Prof
       </button>
-      <button
-        style={{
-          background: profNumber() === 4 ? "green" : "",
-        }}
-        onClick={() => setProf(4)}
-      >
+      <button style={buttonStyle(4)} onClick={() => setProf(4)}>
         4th Prof
       </button>
     </div>
   );
 }
-
-export default ProfButtons;

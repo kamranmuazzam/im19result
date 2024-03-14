@@ -1,17 +1,15 @@
-import { createSignal } from "solid-js";
-
-function ResultDisplay(props) {
-  const rollNumber = props.rollNumber;
-  const [result, setResult] = createSignal("");
-  const [name, setName] = createSignal("---");
-  const [examRoll, setExamRoll] = createSignal("---");
-  const [resultStatus, setResultStatus] = createSignal("---");
-  const [resultColor, setResultColor] = createSignal("");
-  const [messageColor, setMessageColor] = createSignal("");
-
+export default function ResultDisplay({
+  rollNumber,
+  name,
+  examRoll,
+  resultStatus,
+  resultColor,
+  messegeColor,
+  loadDash,
+}) {
   return (
     <div style={{ background: resultColor() }}>
-      <div style={{ background: messageColor() }}>
+      <div style={{ background: messegeColor() }}>
         <p>Roll Number: {rollNumber()}</p>
         <ul>{result()}</ul>
         <ul>Name : {!name() ? loadDash() : name()}</ul>
@@ -21,5 +19,3 @@ function ResultDisplay(props) {
     </div>
   );
 }
-
-export default ResultDisplay;
