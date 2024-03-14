@@ -44,15 +44,15 @@ jobs:
         # If you don't have `beforeBuildCommand` configured you may want to build your frontend here too.
         run: yarn install # Change this to npm, yarn or pnpm.
       - name: Generate Tauri Private Key
-        run: yarn tauri signer generate -w ${{ runner.os == 'Windows' && 'C:\\Users\\runner\\.tauri\\myapp.key' || '/home/runner/.tauri/myapp.key' }}
+        run: yarn tauri signer generate -w ${{ runner.os == 'Windows' && '$HOME\\.tauri\\myapp.key' || '$HOME/.tauri/myapp.key' }}
 
       - name: Base64 Encode Private Key
         run: |
-          cat ${{ runner.os == 'Windows' && 'C:\\Users\\runner\\.tauri\\myapp.key' || '/home/runner/.tauri/myapp.key' }} | base64 > ${{ runner.os == 'Windows' && 'C:\\Users\\runner\\.tauri\\myapp.key.base64' || '/home/runner/.tauri/myapp.key.base64' }}
+          cat ${{ runner.os == 'Windows' && '$HOME\\.tauri\\myapp.key' || '$HOME/.tauri/myapp.key' }} | base64 > ${{ runner.os == 'Windows' && '$HOME\\.tauri\\myapp.key.base64' || '$HOME/.tauri/myapp.key.base64' }}
 
       - name: Set up environment variables
         run: |
-          echo "TAURI_PRIVATE_KEY=$(cat ${{ runner.os == 'Windows' && 'C:\\Users\\runner\\.tauri\\myapp.key.base64' || '/home/runner/.tauri/myapp.key.base64' }})" >> ${{ runner.os == 'Windows' && '$env:GITHUB_ENV' || '$GITHUB_ENV' }}
+          echo "TAURI_PRIVATE_KEY=$(cat ${{ runner.os == 'Windows' && '$HOME\\.tauri\\myapp.key.base64' || '$HOME/.tauri/myapp.key.base64' }})" >> ${{ runner.os == 'Windows' && '$env:GITHUB_ENV' || '$GITHUB_ENV' }}
           echo "TAURI_KEY_PASSWORD=${{ secrets.TAURI_KEY_PASSWORD }}" >> ${{ runner.os == 'Windows' && '$env:GITHUB_ENV' || '$GITHUB_ENV' }}
 
       - name: Build the app
