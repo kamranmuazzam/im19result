@@ -80,7 +80,7 @@ function App() {
 
   return (
     <div>
-      version 0.9.0, hehe
+      we are checking if 1111 was updated or not
       <div
         style={{
           display: "row",
