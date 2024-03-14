@@ -3,7 +3,7 @@
     "beforeDevCommand": "yarn dev",
     "beforeBuildCommand": "yarn build",
     "devPath": "http://localhost:1420",
-    "distDir": "../dist/{{target}}/{{arch}}/{{current_version}}"
+    "distDir": "../dist/{{target}}/{{arch}}/v{{current_version}}"
   },
   "package": {
     "productName": "IM 19 results",
