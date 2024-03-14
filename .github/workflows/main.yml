@@ -52,8 +52,16 @@ jobs:
 
       - name: Base64 Encode Private Key
         run: |
-          if [ -f ${{ runner.os == 'Windows' && '$HOME\\.tauri\\myapp.key' || '/home/runner/.tauri/myapp.key' }} ]; then
-            cat ${{ runner.os == 'Windows' && '$HOME\\.tauri\\myapp.key' || '/home/runner/.tauri/myapp.key' }} | base64 > ${{ runner.os == 'Windows' && '$HOME\\.tauri\\myapp.key.base64' ||
+          if [ -f "${{ runner.os == 'Windows' && '$HOME\\.tauri\\myapp.key' || '/home/runner/.tauri/myapp.key' }}" ]; then
+            cat "${{ runner.os == 'Windows' && '$HOME\\.tauri\\myapp.key' || '/home/runner/.tauri/myapp.key' }}" | base64 > "${{ runner.os == 'Windows' && '$HOME\\.tauri\\myapp.key.base64' || '/home/runner/.tauri/myapp.key.base64' }}"
+          fi
+
+      - name: Set up environment variables
+        run: |
+          if [ -f "${{ runner.os == 'Windows' && '$HOME\\.tauri\\myapp.key.base64' || '/home/runner/.tauri/myapp.key.base64' }}" ]; then
+            echo "TAURI_PRIVATE_KEY=$(cat "${{ runner.os == 'Windows' && '$HOME\\.tauri\\myapp.key.base64' || '/home/runner/.tauri/myapp.key.base64' }}")" >> "${{ runner.os == 'Windows' && '$env:GITHUB_ENV' || '$GITHUB_ENV' }}"
+            echo "TAURI_KEY_PASSWORD=${{ secrets.TAURI_KEY_PASSWORD }}" >> "${{ runner.os == 'Windows' && '$env:GITHUB_ENV' || '$GITHUB_ENV' }}"
+          fi
 
       - name: Build the app
         uses: tauri-apps/tauri-action@v0
