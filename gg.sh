@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the version variable
-version="0.123.0"
+version="0.133.0"
 
 # Define the JSON content with the version variable
 json_content='{
@@ -34,5 +34,5 @@ git add --all
 git commit -m "'"$version"'"
 git push -u origin main
 
-# git tag v0.123.0
-# git push origin v0.123.0
+# git tag v0.133.0
+# git push origin v0.133.0
