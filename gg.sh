@@ -3,7 +3,8 @@
 # Define the version variable
 old_version="0.154.0"
 version="0.155.0"
-if [ -n "$old_version" ] && [ -n "$version" ]; then find . -type f -exec sed -i '' "s/$old_version/$version/g" {} +; fi
+LC_CTYPE=C find . -type f -exec sed -i '' "s/$old_version/$version/g" {} +
+
 
 
 
