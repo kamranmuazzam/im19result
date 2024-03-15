@@ -80,7 +80,7 @@ function App() {
 
   return (
     <div>
-      Developed by : Anonymous
+      Developed by : Anonymous_x
       <div
         style={{
           display: "row",
