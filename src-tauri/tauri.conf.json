@@ -7,7 +7,7 @@
   },
   "package": {
     "productName": "IM 19 results",
-    "version": "1.144.116"
+    "version": "1.144.117"
   },
   "tauri": {
     "updater": {
