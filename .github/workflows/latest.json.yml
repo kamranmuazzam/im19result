@@ -15,13 +15,15 @@ jobs:
 
       # Add your build steps here
 
-      - name: Generate latest.json
-        run: |
-          rm latest.json
-          curl -LJO https://github.com/kamranmuazzam/im19result/releases/download/v0.156.0/latest.json
+      - name: Check if latest.json exists
+        run: test -f latest.json
+        continue-on-error: true
+        id: check_latest_json
 
-      # - name: Move latest.json to root
-      #   run: mv path/to/latest.json latest.json
+      - name: Generate latest.json
+        if: steps.check_latest_json.outcome != 'success'
+        run: |
+          curl -LJO https://github.com/kamranmuazzam/im19result/releases/download/v0.156.0/latest.json
 
       - name: Configure Git
         run: |
