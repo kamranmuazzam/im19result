@@ -1,0 +1,44 @@
+name: Updating the Json
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Wait for URL to be available
+        run: |
+          while ! curl --output /dev/null --silent --head --fail "https://github.com/kamranmuazzam/im19result/releases/download/1.114.115/latest.json"; do
+            sleep 10
+            echo "Waiting for URL to be available..."
+          done
+
+      - name: Download latest.json
+        run: |
+          rm latest.json
+          curl -LJO "https://github.com/kamranmuazzam/im19result/releases/download/1.114.115/latest.json"
+
+      - name: Configure Git
+        run: |
+          git config --global user.email "kamranmuazzam@gmail.com"
+          git config --global user.name "kamran_muazzam"
+
+      - name: Commit changes
+        run: |
+          git add latest.json
+          git commit -m "Move latest.json to root"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
+
+    # Add any other steps as needed
