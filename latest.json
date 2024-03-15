@@ -1,15 +1,11 @@
 {
-  "version": "1.144.122",
-  "notes": "Latest App v1.144.122",
-  "pub_date": "2024-03-15T12:01:27.798Z",
+  "version": "1.144.123",
+  "notes": "Latest App v1.144.123",
+  "pub_date": "2024-03-15T12:37:34.266Z",
   "platforms": {
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQVJXYnVYYUpwaHpRb3RxSE1KUmJrU2NXY2dHZU5qRFBXYmZYQ0NXeHhWRXB3NGRsMHMrc21YclE0ODdNWWNGSWFCbkZid0dBaDIvNEZPUXRZUEJubDlzRE50bGVHSmdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzEwNTA0MDQ3CWZpbGU6SU0gMTkgcmVzdWx0cy5hcHAudGFyLmd6CmZuMlRoenk1YkNjUHpGOE9wR2tsSUUwRkMrRDdIUUM3R1F4TDk1dGkvdFkwaVNEUTJSNWN0b2tXV1h6MzdQLzlEVkpZZWJiR2xETmVSS0RsNDE5ZkJRPT0K",
-      "url": "https://github.com/kamranmuazzam/im19result/releases/download/v1.144.122/IM.19.results_x64.app.tar.gz"
-    },
-    "linux-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQVJXYnVYYUpwaDhWblQrUWdBUWJaU1A5SnpjY3d4T2dLTlVUT0hXTnU4YUJ5ZmFlNHhKOHI5aUl4K3kxcVZ2U0l5d28zaWFNOVdwMnlqRnRuUy8wSncvZFpLTlpHL2dNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzEwNTA0MDgxCWZpbGU6aW0tMTktcmVzdWx0c18xLjE0NC4xMjJfYW1kNjQuQXBwSW1hZ2UudGFyLmd6CmNYUjlzMkUyZW1zVFhGNlpndE1sSGRxbllDOGlJK3lIOHVhcGo0SGNTU1hsa1grclFBc1FmUXV5a2g5d3RraXIwdXRTQWxkNG44RVNGTzBqVENwakNRPT0K",
-      "url": "https://github.com/kamranmuazzam/im19result/releases/download/v1.144.122/im-19-results_1.144.122_amd64.AppImage.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQVJXYnVYYUpwaDlHV3QzUEtSMVF4V2RTbUtkUHEvSUVyU2xsNXdiT1RQZnNickNJM1pKTXZCdjlNMVNKSWpWRExIOEFZSzM3N3huc0lkWElxZ3NrRmkvU2poTEc4dFFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzEwNTA2MjUwCWZpbGU6SU0gMTkgcmVzdWx0cy5hcHAudGFyLmd6CjE4V1RRdlc4ZlI5SzhFcjg5ZlAzd2phc2VOV0NTa1RLOFN0L2JlSW5wYmVuRkNEcFpGb1Y5ejEvRFNpNU10SzNCSnpFNUwwSG0rRWoxZUJyZTJRaUFRPT0K",
+      "url": "https://github.com/kamranmuazzam/im19result/releases/download/v1.144.123/IM.19.results_x64.app.tar.gz"
     }
   }
 }
