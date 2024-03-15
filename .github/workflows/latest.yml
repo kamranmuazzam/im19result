@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Updating the Json
 
 on:
   push:
@@ -7,7 +7,12 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        platform: [macos-latest, ubuntu-20.04, windows-latest]
+    runs-on: ${{ matrix.platform }}
 
     steps:
       - name: Checkout repository
