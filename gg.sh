@@ -33,6 +33,9 @@ echo "JSON file created successfully."
 git add --all
 git commit -m "'"$version"'"
 git push -u origin main
+gh release create v0.133.0 --title "Version 0.133.0" --notes "releasing '"$version"', kudos"
+gh release edit v0.133.0 --draft=false
+
 
 # git tag v0.133.0
 # git push origin v0.133.0

@@ -80,7 +80,7 @@ function App() {
 
   return (
     <div>
-      133 update check, 1 111 111, hehe hahaha whiw hiw whihiwh
+      Developed by : Anonymous
       <div
         style={{
           display: "row",
