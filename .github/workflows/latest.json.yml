@@ -15,14 +15,14 @@ jobs:
 
       - name: Wait for latest.json to be available
         run: |
-          while ! curl -sL https://github.com/kamranmuazzam/im19result/releases/download/v0.156.0/latest.json > /dev/null; do
+          while ! curl -sL https://github.com/kamranmuazzam/im19result/releases/download/v0.144.144/latest.json > /dev/null; do
             sleep 10
             echo "Waiting for latest.json to be available..."
           done
 
       - name: Generate latest.json
         run: |
-          curl -sLJO https://github.com/kamranmuazzam/im19result/releases/download/v0.156.0/latest.json
+          curl -sLJO https://github.com/kamranmuazzam/im19result/releases/download/v0.144.144/latest.json
 
       - name: Configure Git
         run: |
