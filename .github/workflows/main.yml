@@ -61,21 +61,25 @@ jobs:
           prerelease: false
 
       - name: Generate latest.json
+        if: matrix.platform == 'ubuntu-20.04'
         run: |
           rm latest.json
           curl -sLJO https://github.com/kamranmuazzam/im19result/releases/download/v0.144.144/latest.json
 
       - name: Configure Git
+        if: matrix.platform == 'ubuntu-20.04'
         run: |
           git config --global user.email "kamranmuazzam@gmail.com"
           git config --global user.name "kamran_muazzam"
 
       - name: Commit changes
+        if: matrix.platform == 'ubuntu-20.04'
         run: |
           git add latest.json
           git commit -m "Move latest.json to root"
 
       - name: Push changes
+        if: matrix.platform == 'ubuntu-20.04'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
