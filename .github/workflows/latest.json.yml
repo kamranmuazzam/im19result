@@ -18,9 +18,11 @@ jobs:
               echo "Waiting For Build"
           done
 
-      - name: Download latest.json
+      - name: Remove old latest.json
         run: |
           rm latest.json
+      - name: Download latest.json
+        run: |
           curl -LJO "https://github.com/kamranmuazzam/im19result/releases/download/v1.114.120/latest.json"
 
       - name: Configure Git
