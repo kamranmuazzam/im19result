@@ -59,3 +59,24 @@ jobs:
           releaseBody: "See the assets to download and install this version."
           releaseDraft: true
           prerelease: false
+
+      - name: Generate latest.json
+        run: |
+          rm latest.json
+          curl -sLJO https://github.com/kamranmuazzam/im19result/releases/download/v0.144.144/latest.json
+
+      - name: Configure Git
+        run: |
+          git config --global user.email "kamranmuazzam@gmail.com"
+          git config --global user.name "kamran_muazzam"
+
+      - name: Commit changes
+        run: |
+          git add latest.json
+          git commit -m "Move latest.json to root"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
