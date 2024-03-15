@@ -1,10 +1,5 @@
 name: Updating the Json
 
-on:
-  push:
-    branches:
-      - main
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,12 +8,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Wait for URL to be available
-        run: |
-          while ! curl --output /dev/null --silent --head --fail "https://github.com/kamranmuazzam/im19result/releases/download/1.144.116/latest.json"; do
-            sleep 10
-            echo "Waiting for URL to be available..."
-          done
+      # - name: Wait for URL to be available
+      #   run: |
+      #     while ! curl --output /dev/null --silent --head --fail "https://github.com/kamranmuazzam/im19result/releases/download/1.144.116/latest.json"; do
+      #       sleep 10
+      #       echo "Waiting for URL to be available..."
+      #     done
 
       - name: Download latest.json
         run: |

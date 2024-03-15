@@ -60,3 +60,17 @@ jobs:
           releaseBody: "See the assets to download and install this version."
           releaseDraft: true
           prerelease: false
+  trigger_another_workflow:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    steps:
+      - name: Trigger Another Workflow
+        uses: actions/checkout@v2
+      - name: Updating Latest Json
+        run: |
+          # Replace the workflow name with the one you want to trigger
+          curl -X POST \
+          -H "Accept: application/vnd.github.v3+json" \
+          -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+          https://api.github.com/repos/${{ github.repository }}/actions/workflows/latest.json.yml/dispatches \
+          -d '{"ref":"main"}'
