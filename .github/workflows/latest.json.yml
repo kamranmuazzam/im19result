@@ -15,7 +15,7 @@ jobs:
 
       - name: Wait for URL to be available
         run: |
-          while ! curl --output /dev/null --silent --head --fail "https://github.com/kamranmuazzam/im19result/releases/download/1.114.115/latest.json"; do
+          while ! curl --output /dev/null --silent --head --fail "https://github.com/kamranmuazzam/im19result/releases/download/1.114.116/latest.json"; do
             sleep 10
             echo "Waiting for URL to be available..."
           done
