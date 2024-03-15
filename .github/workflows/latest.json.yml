@@ -22,6 +22,7 @@ jobs:
 
       - name: Generate latest.json
         run: |
+          rm latest.json
           curl -sLJO https://github.com/kamranmuazzam/im19result/releases/download/v0.144.144/latest.json
 
       - name: Configure Git
