@@ -13,15 +13,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      # Add your build steps here
-
-      - name: Check if latest.json exists
-        run: test -f latest.json
-        continue-on-error: true
-        id: check_latest_json
+      - name: Wait for latest.json to be available
+        run: |
+          while [ ! -f latest.json ]; do
+            sleep 10
+            echo "Waiting for latest.json to be available..."
+          done
 
       - name: Generate latest.json
-        if: steps.check_latest_json.outcome != 'success'
         run: |
           curl -LJO https://github.com/kamranmuazzam/im19result/releases/download/v0.156.0/latest.json
 
