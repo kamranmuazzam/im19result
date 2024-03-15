@@ -1,5 +1,8 @@
 name: Updating the Json
-
+on:
+  push:
+    branches:
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
