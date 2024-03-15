@@ -11,19 +11,25 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Wait for URL to be available
-        run: |
-          while curl -s "https://github.com/kamranmuazzam/im19result/releases/download/v1.144.121/latest.json" | grep -q '{"error":"Not Found"}'; do
-              sleep 10
-              echo "Waiting For Build"
-          done
-
       - name: Remove old latest.json
         run: |
           rm latest.json
       - name: Download latest.json
         run: |
-          curl -LJO "https://github.com/kamranmuazzam/im19result/releases/download/v1.144.121/latest.json"
+          while true; do
+              curl -LJO "https://github.com/kamranmuazzam/im19result/releases/download/v1.144.121/latest.json"
+              if grep -q "Not Found" "latest.json"; then
+                  # Your process to repeat if content is "Not Found"
+                  echo "Waiting for Build"
+                  # Place your process here
+                  rm latest.json
+              else
+                  echo "Updated Successfully."
+                  break  # Exit the loop if content is found
+              fi
+
+              sleep 10  # Adjust the sleep time as needed to avoid excessive CPU usage
+          done
           ls
 
       - name: Configure Git
