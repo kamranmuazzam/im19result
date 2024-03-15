@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Define the version variable
-old_version="1.144.122"
-version="1.144.122"
+old_version="1.144.123"
+version="1.144.123"
 LC_CTYPE=C find . -maxdepth 3 -type f -exec perl -pi -e "s/$old_version/$version/g" {} +
 
 git config --global user.name "Kamran"
@@ -16,5 +16,5 @@ gh release create v$version --title "Version $version" --notes "releasing $versi
 gh release edit v$version --draft=false
 
 
-# git tag v1.144.122
-# git push origin v1.144.122
+# git tag v1.144.123
+# git push origin v1.144.123
