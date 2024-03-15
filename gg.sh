@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the version variable
-version="0.133.0"
+version="0.154.0"
 
 # Define the JSON content with the version variable
 json_content='{
@@ -33,9 +33,9 @@ echo "JSON file created successfully."
 git add --all
 git commit -m "'"$version"'"
 git push -u origin main
-gh release create v0.133.0 --title "Version 0.133.0" --notes "releasing '"$version"', kudos"
-gh release edit v0.133.0 --draft=false
+gh release create v0.154.0 --title "Version 0.154.0" --notes "releasing '"$version"', kudos"
+gh release edit v0.154.0 --draft=false
 
 
-# git tag v0.133.0
-# git push origin v0.133.0
+# git tag v0.154.0
+# git push origin v0.154.0
