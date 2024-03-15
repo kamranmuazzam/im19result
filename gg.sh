@@ -3,7 +3,7 @@
 # Define the version variable
 old_version="0.154.0"
 version="0.155.0"
-find . -type f -exec sed -i '' 's/'"$old_version"'/'"$version"'/g' {} +
+if [ -n "$old_version" ] && [ -n "$version" ]; then find . -type f -exec sed -i '' "s/$old_version/$version/g" {} +; fi
 
 
 
