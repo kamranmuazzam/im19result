@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Define the version variable
-old_version="0.154.0"
+old_version="0.155.0"
 version="0.155.0"
-LC_CTYPE=C find . -type f -exec sed -i '' "s/$old_version/$version/g" {} +
+LC_CTYPE=C find . -maxdepth 3 -type f -exec perl -pi -e "s/$old_version/$version/g" {} +
 
 
 
@@ -15,5 +15,5 @@ gh release create v$version --title "Version $version" --notes "releasing $versi
 gh release edit v$version --draft=false
 
 
-# git tag v0.154.0
-# git push origin v0.154.0
+# git tag v0.155.0
+# git push origin v0.155.0
