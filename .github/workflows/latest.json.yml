@@ -18,7 +18,7 @@ jobs:
       - name: Generate latest.json
         run: |
           rm latest.json
-          curl -LJO https://github.com/kamranmuazzam/im19result/releases/download/v0.155.0/latest.json
+          curl -LJO https://github.com/kamranmuazzam/im19result/releases/download/v0.156.0/latest.json
 
       # - name: Move latest.json to root
       #   run: mv path/to/latest.json latest.json
