@@ -13,7 +13,7 @@ jobs:
 
       - name: Wait for URL to be available
         run: |
-          while ! curl -s "https://github.com/kamranmuazzam/im19result/releases/download/v1.144.120/latest.json" | grep -q '{"error":"Not Found"}'; do
+          while curl -s "https://github.com/kamranmuazzam/im19result/releases/download/v1.144.120/latest.json" | grep -q '{"error":"Not Found"}'; do
               sleep 10
               echo "Waiting For Build"
           done
