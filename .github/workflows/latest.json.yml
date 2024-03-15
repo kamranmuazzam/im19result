@@ -24,6 +24,7 @@ jobs:
       - name: Download latest.json
         run: |
           curl -LJO "https://github.com/kamranmuazzam/im19result/releases/download/v1.114.120/latest.json"
+          ls
 
       - name: Configure Git
         run: |
