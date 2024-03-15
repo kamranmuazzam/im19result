@@ -1,0 +1,41 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Add your build steps here
+
+      - name: Generate latest.json
+        run: |
+          curl -o latest.json https://github.com/kamranmuazzam/im19result/releases/download/v0.154.0/latest.json
+
+      # - name: Move latest.json to root
+      #   run: mv path/to/latest.json latest.json
+
+      - name: Configure Git
+        run: |
+          git config --global user.email "kamranmuazzam@gmail.com"
+          git config --global user.name "kamran_muazzam"
+
+      - name: Commit changes
+        run: |
+          git add latest.json
+          git commit -m "Move latest.json to root"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
+
+    # Add any other steps as needed
