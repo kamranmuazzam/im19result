@@ -1,9 +1,8 @@
-name: Updating the Json
-
 on:
-  push:
-    branches:
-      - main
+  workflow_run:
+    workflows: ["main.yml"]
+    types:
+      - completed
 
 jobs:
   build:
@@ -12,13 +11,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-
-      - name: Wait for latest.json to be available
-        run: |
-          while ! curl -sL https://github.com/kamranmuazzam/im19result/releases/download/v0.144.144/latest.json > /dev/null; do
-            sleep 10
-            echo "Waiting for latest.json to be available..."
-          done
 
       - name: Generate latest.json
         run: |
