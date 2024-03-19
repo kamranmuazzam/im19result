@@ -1,1 +1,11 @@
-Not Found
+{
+  "version": "1.144.132",
+  "notes": "Latest App v1.144.132",
+  "pub_date": "2024-03-19T11:35:15.153Z",
+  "platforms": {
+    "darwin-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQVJXYnVYYUpwaC9VU3hCVlNPeW9iOFY0aGM4UEJQaHpGWldOeGI3TzhUSmpCQjNkY0pxend0RytwMDdobjV5Q2dVNmJvdFJDdW8wWkFFZXoyeDFXMzlxUEFtTm1OclFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzEwODQ4MTExCWZpbGU6SU0gMTkgcmVzdWx0cy5hcHAudGFyLmd6CkdDQVFMQVZ4TFpSOERsOFNDczdnSmo1R05kTGF4bElJVHJRNHFPRUpDTFUvRGl1dFhZVmlUbWhLQzgybDdHaVZhVFBkSU5oQ2FobXAxYlA4V3ArT0NnPT0K",
+      "url": "https://github.com/kamranmuazzam/im19result/releases/download/v1.144.132/IM.19.results_x64.app.tar.gz"
+    }
+  }
+}
