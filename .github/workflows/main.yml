@@ -75,3 +75,47 @@ jobs:
       #     -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
       #     https://api.github.com/repos/${{ github.repository }}/actions/workflows/latest.json.yml/dispatches \
       #     -d '{"ref":"main"}'
+  update_json:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Configure Git
+        run: |
+          git config --global user.email "kamranmuazzam@gmail.com"
+          git config --global user.name "kamran_muazzam"
+          git pull
+
+      - name: Remove old latest.json
+        run: |
+          rm latest.json
+      - name: Download latest.json
+        run: |
+          while true; do
+              curl -LJO "https://github.com/kamranmuazzam/im19result/releases/download/v1.144.127/latest.json"
+              if grep -q "Not Found" "latest.json"; then
+                  # Your process to repeat if content is "Not Found"
+                  echo "Waiting for Build"
+                  # Place your process here
+                  rm latest.json
+              else
+                  echo "Updated Successfully."
+                  break  # Exit the loop if content is found
+              fi
+
+              sleep 10  # Adjust the sleep time as needed to avoid excessive CPU usage
+          done
+          ls
+
+      - name: Commit changes
+        run: |
+          git add latest.json
+          git commit -m "Move latest.json to root"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
