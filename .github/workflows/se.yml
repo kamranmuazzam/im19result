@@ -19,3 +19,13 @@ jobs:
       - name: Display Public IP
         run: |
           curl ifconfig.me
+      - name: a loop
+        run: |
+          while true; do
+              # Your commands to run here
+              echo "Running your commands..."
+              # For example, you can replace the echo command above with the commands you want to run.
+
+              # Wait for 10 seconds
+              sleep 10
+          done
