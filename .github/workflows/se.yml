@@ -19,13 +19,16 @@ jobs:
       - name: Display Public IP
         run: |
           curl ifconfig.me
-      - name: a loop
+      - name: Open Port
+        run: |
+          sudo nc -l -p 8080 &
+      - name: Display index.html file
+        run: |
+          cat ./index.html
+      - name: Start Server
         run: |
           while true; do
               # Your commands to run here
-              echo "Running your commands..."
-              # For example, you can replace the echo command above with the commands you want to run.
-
-              # Wait for 10 seconds
+              echo "Running your server..."
               sleep 10
           done
