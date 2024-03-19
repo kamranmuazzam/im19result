@@ -42,16 +42,18 @@ jobs:
         run: |
           echo "Public IP:"
           curl ifconfig.me
-          sleep 10
-          echo "Public IP:"
-          curl ifconfig.me
-          sleep 10
-          echo "Public IP:"
-          curl ifconfig.me
-          sleep 10
-          echo "Public IP:"
-          curl ifconfig.me
-      - name: Build and deploy
+      - name: Determine Router IP
+        id: router_ip
+        run: |
+          # Fetch the default gateway using the `ip route` command and extract the router IP address
+          ROUTER_IP=$(ip route | awk '/default/ { print $3 }')
+          echo "::set-output name=router_ip::$ROUTER_IP"
+
+      - name: Open Port on Router
+        run: |
+          ssh admin@${{ steps.router_ip.outputs.router_ip }} "iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 3000 -j DNAT --to 10.1.1.84:3000"
+          - name: Build and deploy
+      - name: Building and deploying website
         run: |
           echo "Building and deploying website..."
           mkdir -p deploy
