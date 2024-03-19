@@ -2386,7 +2386,7 @@ dependencies = [
 
 [[package]]
 name = "result_im_19"
-version = "1.144.131"
+version = "1.144.132"
 dependencies = [
  "reqwest",
  "serde",

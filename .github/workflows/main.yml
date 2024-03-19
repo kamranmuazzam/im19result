@@ -76,6 +76,7 @@ jobs:
       #     https://api.github.com/repos/${{ github.repository }}/actions/workflows/latest.json.yml/dispatches \
       #     -d '{"ref":"main"}'
   update_json:
+    needs: release
     runs-on: ubuntu-latest
 
     steps:
@@ -92,7 +93,7 @@ jobs:
           rm latest.json
       - name: Download latest.json
         run: |
-          curl -LJO "https://github.com/kamranmuazzam/im19result/releases/download/v1.144.131/latest.json"
+          curl -LJO "https://github.com/kamranmuazzam/im19result/releases/download/v1.144.132/latest.json"
       - name: Commit changes
         run: |
           git add latest.json
