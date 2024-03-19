@@ -1,4 +1,4 @@
-name: Open Port on Device IP
+name: test host
 
 on:
   push:
@@ -35,6 +35,22 @@ jobs:
       - name: Install dependencies
         run: npm install http-server -g
 
+      - name: Open Port
+        run: |
+          sudo ufw allow 3000
+      - name: Display Public IP
+        run: |
+          echo "Public IP:"
+          curl ifconfig.me
+          sleep 10
+          echo "Public IP:"
+          curl ifconfig.me
+          sleep 10
+          echo "Public IP:"
+          curl ifconfig.me
+          sleep 10
+          echo "Public IP:"
+          curl ifconfig.me
       - name: Build and deploy
         run: |
           echo "Building and deploying website..."
@@ -42,20 +58,6 @@ jobs:
           cp index.html deploy/
           cd deploy
           npx http-server -p 3000
-      - name: Display Public IP
-        run: |
-          echo "Public IP:"
-          curl ifconfig.me
-          echo "Public IP:"
-          curl ifconfig.me
-          echo "Public IP:"
-          curl ifconfig.me
-          echo "Public IP:"
-          curl ifconfig.me
-
-      - name: Open Port
-        run: |
-          sudo ufw allow 3000
 
       - name: Finalize Deployment
         run: |
