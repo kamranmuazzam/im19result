@@ -27,13 +27,21 @@ jobs:
       - name: Display Public IP
         run: |
           curl ifconfig.me
-      - name: Open Port
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+
+      - name: Install dependencies
+        run: npm install http-server -g
+
+      - name: Build and deploy
         run: |
-          sudo nc -l -p 8080 &
-      - name: Display index.html file
-        run: |
-          ls
-          cat index.html
+          echo "Building and deploying website..."
+          mkdir -p deploy
+          cp index.html deploy/
+          cd deploy
+          npx http-server -p 3000
       - name: Start Server
         run: |
           while true; do
