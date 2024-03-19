@@ -23,7 +23,7 @@ jobs:
       - name: Download latest.json
         run: |
           while true; do
-              curl -LJO "https://github.com/kamranmuazzam/im19result/releases/download/v1.144.128/latest.json"
+              curl -LJO "https://github.com/kamranmuazzam/im19result/releases/download/v1.144.129/latest.json"
               if grep -q "Not Found" "latest.json"; then
                   # Your process to repeat if content is "Not Found"
                   echo "Waiting for Build"
