@@ -93,7 +93,7 @@ jobs:
           rm latest.json
       - name: Download latest.json
         run: |
-          curl -LJO "https://github.com/kamranmuazzam/im19result/releases/download/v1.144.132/latest.json"
+          curl -LJO "https://github.com/kamranmuazzam/im19result/releases/download/v1.144.134/latest.json"
       - name: Commit changes
         run: |
           git add latest.json
