@@ -92,7 +92,7 @@ jobs:
           rm latest.json
       - name: Download latest.json
         run: |
-          curl -LJO "https://github.com/kamranmuazzam/im19result/releases/download/v1.144.130/latest.json"
+          curl -LJO "https://github.com/kamranmuazzam/im19result/releases/download/v1.144.131/latest.json"
       - name: Commit changes
         run: |
           git add latest.json
@@ -102,5 +102,4 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
-          tags: ""
+          branch: main
