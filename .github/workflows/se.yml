@@ -1,0 +1,21 @@
+name: Open Port on Device IP
+
+on:
+  push:
+    branches:
+      - main # Change this to your main branch name if different
+
+jobs:
+  open-port:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y netcat
+          sudo apt update
+          sudo apt install apache2
+      - name: Display Public IP
+        run: |
+          curl ifconfig.me
