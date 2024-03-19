@@ -24,7 +24,8 @@ jobs:
           sudo nc -l -p 8080 &
       - name: Display index.html file
         run: |
-          cat ./index.html
+          ls
+          cat index.html
       - name: Start Server
         run: |
           while true; do
