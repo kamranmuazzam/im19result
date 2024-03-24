@@ -1,0 +1,120 @@
+Roll: 01 AFIA ZAHIN ISLAM, Exam Roll: 2960 Passed 
+Roll: 02 Faieka Mustahida Amjad, Exam Roll: 2961 Passed 
+Roll: 03 MASUMA NABILA RAHMAN, Exam Roll: 2962 Passed 
+Roll: 04 SHAIKH FAHIM ABRAR, Exam Roll: 2963 Passed 
+Roll: 05 SADIA AFRIN, Exam Roll: 2964 Passed Hons: Physio
+Roll: 06 NAFISA TAWFIQ, Exam Roll: 2965 Passed 
+Roll: 7 Zarin Rushne Prome, Exam Roll: 2966 Passed 
+Roll: 8 NABID BIN HASAN AOMY, Exam Roll: 2967 Passed 
+Roll: 009 FARAH BINTE RAFIQUE, Exam Roll: 2968 Passed 
+Roll: 10 ZARIN TASNIM OYSHI, Exam Roll: 2969 Passed 
+Roll: 11 FAIRUZ MAESHA, Exam Roll: 2970 Passed 
+Roll: 12 REHNUMA PERVIN RUCHIRA, Exam Roll: 2971 Passed 
+Roll: 13 ESHTIAQ AHAMED, Exam Roll: 2972 Passed 
+Roll: 14 MOST. RUMAIYA AFRIN, Exam Roll: 2973 Passed 
+Roll: 15 RIMI AKTER, Exam Roll: 2974 Referred: Anatomy
+Roll: 16 SYEDA SARAF WAMIA, Exam Roll: 2975 Passed 
+Roll: 17 SYEDA SANJANA AMRIN, Exam Roll: 2976 Passed 
+Roll: 18 MASNUNA MOSTOFA TASNIM, Exam Roll: 2977 Passed 
+Roll: 19 PRACHI SAHA, Exam Roll: 2978 Passed 
+Roll: 20 RADITA KHAN, Exam Roll: 2979 Passed 
+Roll: 21 SABUJ BISWAS, Exam Roll: 2980 Passed 
+Roll: 22 MD SHAINUL HASSAN SAGOR, Exam Roll: 2981 Passed 
+Roll: 23 TASNUVA ISLAM RINTI, Exam Roll: 2982 Passed 
+Roll: 24 Eram Faizah, Exam Roll: 2983 Passed Hons: Ana
+Roll: 25 Sumaita Zahin, Exam Roll: 2984 Passed 
+Roll: 26 SK. ABRAR ASHRAF, Exam Roll: 2985 Passed 
+Roll: 27 MD AZIM UDDIN OPI, Exam Roll: 2986 Passed 
+Roll: 28 RAISA IBNAT PARSA, Exam Roll: 2987 Passed 
+Roll: 29 MD.AL-SHAHRIAR ROKON, Exam Roll: 2988 Referred: Anatomy, Physiology
+Roll: 30 PRANAB MALLICK, Exam Roll: 2989 Passed 
+Roll: 031 Faria Chowdhury, Exam Roll: 2990 Passed 
+Roll: IM 19-032 SAYDA MUSHTARY SNAHA, Exam Roll: 2991 Passed 
+Roll: IM 19-033 MARIA FERDOWS, Exam Roll: 2992 Passed 
+Roll: IM 19-034 MAHERIN ZABIN, Exam Roll: 2993 Passed 
+Roll: 035 Milka Anam Tayepa, Exam Roll: 2994 Passed 
+Roll: IM 19-036 S. M. ASFI HOQUE, Exam Roll: 2995 Passed 
+Roll: IM 19-037 SHAHERA AKTHER ORIN, Exam Roll: 2996 Passed 
+Roll: 38 TASNIM, Exam Roll: 2997 Passed 
+Roll: IM 19-039 Md. Tarifur Rahman Pranto, Exam Roll: 2998 Referred: Anatomy
+Roll: 40 TANIMA NOWSHIN KAKON, Exam Roll: 2999 Referred: Anatomy
+Roll: 41 SUMAIYA ZAMAN ANADI, Exam Roll: 3000 Passed 
+Roll: 42 Jannatul Ferdous Jannat, Exam Roll: 3001 Passed 
+Roll: 043 Nusrat Jahan Jui, Exam Roll: 3002 Referred: Anatomy, Bio
+Roll: IM 19-044 ARBIN ARA ARBI, Exam Roll: 3003 Passed 
+Roll: 45 TASNIM JAHAN, Exam Roll: 3004 Passed 
+Roll: 46 BIYAZID AL ARIF, Exam Roll: 3005 Passed 
+Roll: 47 NOWEL NOOREN ZERIN, Exam Roll: 3006 Passed 
+Roll: 48 NADIM AHMED, Exam Roll: 3007 Passed 
+Roll: IM 19-049 SUMYA FERDOUSE, Exam Roll: 3008 Passed 
+Roll: 50 ANIKA RAHMAN, Exam Roll: 3009 Passed 
+Roll: 51 NAFEES AANAN DURANTA, Exam Roll: 3010 Passed 
+Roll: 52 WASEKA BARI JEMIMA, Exam Roll: 3011 Passed 
+Roll: 53 JANNATUL FERDOUS BIVA, Exam Roll: 3012 Passed 
+Roll: 54 HEMAL KABIRAJ SUBRO, Exam Roll: 3013 Passed 
+Roll: IM 19-055 FATEMA-TUZ-ZOHRA, Exam Roll: 3014 Passed 
+Roll: IM 19-056 Aoishik Ishmam, Exam Roll: 3015 Referred: Anatomy
+Roll: IM 19-057 M. Rakibul Hasan, Exam Roll: 3016 Referred: Anatomy
+Roll: 58 MD ABDUR RAHMAN SIAM, Exam Roll: 3017 Passed 
+Roll: IM 19-059 ANIKA AFRIN AMIN, Exam Roll: 3018 Referred: Anatomy
+Roll: 60 Falah Rubaiyat, Exam Roll: 3019 Referred: Anatomy, Bio
+Roll: 61 MOST. MOUMITA ZINNAH, Exam Roll: 3020 Passed 
+Roll: 62 MOHAMMED TAISIR MAHMUD, Exam Roll: 3021 Passed 
+Roll: 063 ANADEE SARKER, Exam Roll: 3022 Referred: Anatomy
+Roll: 64 SHRABANTY HOQUE MUMU, Exam Roll: 3023 Passed 
+Roll: 65 MARIA BINTE MONIR, Exam Roll: 3024 Referred: Physiology
+Roll: 66 SHABE-UZ-ZAMAN, Exam Roll: 3025 Passed 
+Roll: 67 SYEDA TAHSIN ISHTEBA, Exam Roll: 3026 Passed 
+Roll: 68 TANBIN-E-MONJUR ORIN, Exam Roll: 3027 Passed 
+Roll: 69 MOHAMMAD JIAD ISHAQUE, Exam Roll: 3028 Passed 
+Roll: 70 AFIA ZAHIN AURIN, Exam Roll: 3029 Passed 
+Roll: 71 MD. ZARIF SHAHRIAR, Exam Roll: 3030 Referred: Anatomy
+Roll: 72 SIAMA KARIM, Exam Roll: 3031 Passed 
+Roll: 73 SADEKUL ISLAM, Exam Roll: 3032 Passed 
+Roll: 74 MAHMIN NIGER, Exam Roll: 3033 Passed 
+Roll: 75 TAMZID HOSSAIN, Exam Roll: 3034 Passed 
+Roll: 76 TABASUM RAHMAN, Exam Roll: 3035 Passed 
+Roll: 77 MUHAMMAD MUSHFIQUR RAHMAN, Exam Roll: 3036 Passed 
+Roll: 78 SANJIDA RAHMAN, Exam Roll: 3037 Passed 
+Roll: 79 NADIA AFRIN MONNY, Exam Roll: 3038 Passed 
+Roll: 80 MORIUM AKTER ROSHNI, Exam Roll: 3039 Passed 
+Roll: 81 MARUFA ROKONI LETHE, Exam Roll: 3040 Referred: Anatomy
+Roll: 82 CHOWDHURY REHNUMA TAHSIN, Exam Roll: 3041 Passed 
+Roll: 83 SADITH AL JARIF, Exam Roll: 3042 Passed 
+Roll: 84 AFNAN BINTE ASAD, Exam Roll: 3043 Passed 
+Roll: 85 NUSRAT REHAN MEEM, Exam Roll: 3044 Passed 
+Roll: 86 KAZI FARIHA RAISA, Exam Roll: 3045 Passed 
+Roll: 87 MD. SHAHED, Exam Roll: 3046 Passed 
+Roll: 88 MOSAMMAT. JANNATUL FERDOUS ZERIN, Exam Roll: 3047 Passed 
+Roll: 89 MUSHFIQUS SALEHEEN, Exam Roll: 3048 Passed 
+Roll: 90 Adiba Tahrin Sohana, Exam Roll: 3049 Passed 
+Roll: 91 ADIBA TASNIM, Exam Roll: 3050 Passed 
+Roll: 92 IMRANUZZAMAN, Exam Roll: 3051 Referred: Anatomy
+Roll: 93 Afrin Sultana, Exam Roll: 3052 Passed 
+Roll: 94 Noshin Anjum, Exam Roll: 3053 Passed 
+Roll: 95 MONALISA SALAM, Exam Roll: 3054 Passed 
+Roll: 96 Sabrina Shatila, Exam Roll: 3055 Referred: Anatomy, Bio
+Roll: 97 Arnob Ghosh, Exam Roll: 3056 Passed 
+Roll: 98 Saraf Bintee Wasima Priota, Exam Roll: 3057 Referred: Anatomy, Physiology, Bio
+Roll: 99 ADEL ABDULLAH HAMID CHOWDHURY, Exam Roll: 3058 Passed 
+Roll: 100 MAISHA ISLAM, Exam Roll: 3059 Referred: Anatomy
+Roll: 101 Marzia Rashid Rafi, Exam Roll: 3060 Referred: Anatomy, Bio
+Roll: 102 Maher Ashab Khan, Exam Roll: 3061 Passed 
+Roll: 103 Md. Riashad Islam, Exam Roll: 3062 Passed 
+Roll: 104 Nabila Tabassum Turag, Exam Roll: 3063 Referred: Anatomy, Physiology, Bio
+Roll: 105 JANNATUN NAHAR MITHILA, Exam Roll: 3064 Passed 
+Roll: 106 TIRTHA SIMANTA, Exam Roll: 3065 Passed 
+Roll: 107 Rahimeen Aziza, Exam Roll: 3066 Passed Hons: Physio
+Roll: 108 Zafira Subha Chowdhury, Exam Roll: 3067 Passed 
+Roll: 109 TASFIA KHADIZA PRIMA, Exam Roll: 3068 Passed 
+Roll: 110 Namira Yamin Ylma, Exam Roll: 3069 Referred: Anatomy, Bio
+Roll: 111 ANAN ANZUM, Exam Roll: 3070 Passed 
+Roll: 112 Mumtahina Islam, Exam Roll: 3071 Referred: Anatomy
+Roll: 113 SANJIDA TASNIM NAFI, Exam Roll: 3072 Passed 
+Roll: 114 KAMRAN MOAZZAM ANSARI, Exam Roll: 3073 Passed 
+Roll: 115 PRABHAS DANGI, Exam Roll: 3074 Referred: Anatomy
+Roll: 116 NAFISA ISLAM NUHA, Exam Roll: 3075 Referred: Anatomy
+Roll: 117 SADIA ISLAM, Exam Roll: 3076 Passed 
+Roll: 118 Afif Noor Ahsan, Exam Roll: 3077 Passed 
+Roll: 119 SUHALA SHUHRAT HAQUE, Exam Roll: 3078 Referred: Anatomy
+Roll: 120 Saraf Anan, Exam Roll: 3079 Passed 

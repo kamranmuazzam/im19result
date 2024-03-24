@@ -46,7 +46,7 @@ jobs:
           cp index.html deploy/
           cd deploy
           nohup npx http-server -p 3000
-          sleep 10
+          # sleep 10
       - name: Open Port
         run: |
           sudo ufw allow 3000
@@ -65,7 +65,7 @@ jobs:
       - name: Finalize Deployment
         run: |
           echo "Website deployed successfully!"
-      - name: Start Server
+      - name: loopppp
         run: |
           while true; do
               # Your commands to run here
