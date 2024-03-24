@@ -1,19 +1,71 @@
+// use chrono::{DateTime, TimeZone, Utc};
 use regex::Regex;
 use reqwest;
 use reqwest::Client;
 use std::fs::File;
-use std::io::Write;
+use std::io::{self, BufRead, BufReader, Result, Write};
+use std::sync::{Arc, Mutex};
+use tokio::runtime::Runtime;
 
-fn main() {
-    let mut file = File::create("output.txt").expect("Failed to create file");
-
-    for i in 1..=120 {
-        let result = pp(i);
-        writeln!(file, "{}", result).expect("Failed to write to file");
+#[tokio::main]
+async fn main() {
+    if let Err(err) = kk().await {
+        eprintln!("Error: {}", err);
+    }
+    if let Err(err) = sort_file_contents("output.txt").await {
+        eprintln!("Error: {}", err);
     }
 }
 
-#[tokio::main]
+async fn kk() -> Result<()> {
+    let rt = Runtime::new()?;
+    let file = Arc::new(Mutex::new(File::create("output.txt")?));
+    let mut handles = Vec::new();
+
+    for i in 1..=120 {
+        let file_clone = Arc::clone(&file);
+        let handle = rt.spawn(async move {
+            let result = pp(i).await;
+            println!("{}", result);
+            let mut file = file_clone.lock().expect("Failed to lock file");
+            writeln!(file, "{} {}", i, result).expect("Failed to write to file");
+        });
+        handles.push(handle);
+    }
+
+    // Wait for all tasks to complete
+    for handle in handles {
+        handle.await?;
+    }
+
+    // Shutdown the runtime
+    rt.shutdown_timeout(std::time::Duration::from_secs(1));
+    Ok(())
+}
+
+async fn sort_file_contents(filename: &str) -> io::Result<()> {
+    // Open the file for reading
+    let file = File::open(filename)?;
+    let reader = BufReader::new(file);
+
+    // Read the contents into a vector
+    let mut lines: Vec<String> = reader.lines().map(|line| line.unwrap()).collect();
+
+    // Sort the lines
+    lines.sort();
+
+    // Open the file for writing
+    let mut file = File::create(filename)?;
+
+    // Write the sorted contents back to the file
+    for line in lines {
+        writeln!(file, "{}", line)?;
+        println!("{}", line)
+    }
+
+    Ok(())
+}
+
 async fn pp(rr: i16) -> String {
     let a = fetch_result(rr, "124".to_string()).await;
     let b = parse_html_to_text_regex(&a);
