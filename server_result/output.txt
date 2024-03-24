@@ -1,120 +1,120 @@
-86 Roll: 86 KAZI FARIHA RAISA, Exam Roll: 3045 Passed 
-88 Roll: 88 MOSAMMAT. JANNATUL FERDOUS ZERIN, Exam Roll: 3047 Passed 
-108 Roll: 108 Zafira Subha Chowdhury, Exam Roll: 3067 Passed 
-55 Roll: IM 19-055 FATEMA-TUZ-ZOHRA, Exam Roll: 3014 Passed 
-15 Roll: 15 RIMI AKTER, Exam Roll: 2974 Referred: Anatomy
-101 Roll: 101 Marzia Rashid Rafi, Exam Roll: 3060 Referred: Anatomy, Bio
-98 Roll: 98 Saraf Bintee Wasima Priota, Exam Roll: 3057 Referred: Anatomy, Physiology, Bio
-14 Roll: 14 MOST. RUMAIYA AFRIN, Exam Roll: 2973 Passed 
-117 Roll: 117 SADIA ISLAM, Exam Roll: 3076 Passed 
-56 Roll: IM 19-056 Aoishik Ishmam, Exam Roll: 3015 Referred: Anatomy
-79 Roll: 79 NADIA AFRIN MONNY, Exam Roll: 3038 Passed 
-37 Roll: IM 19-037 SHAHERA AKTHER ORIN, Exam Roll: 2996 Passed 
-17 Roll: 17 SYEDA SANJANA AMRIN, Exam Roll: 2976 Passed 
-65 Roll: 65 MARIA BINTE MONIR, Exam Roll: 3024 Referred: Physiology
-43 Roll: 043 Nusrat Jahan Jui, Exam Roll: 3002 Referred: Anatomy, Bio
-9 Roll: 009 FARAH BINTE RAFIQUE, Exam Roll: 2968 Passed 
-26 Roll: 26 SK. ABRAR ASHRAF, Exam Roll: 2985 Passed 
-68 Roll: 68 TANBIN-E-MONJUR ORIN, Exam Roll: 3027 Passed 
-38 Roll: 38 TASNIM, Exam Roll: 2997 Passed 
-31 Roll: 031 Faria Chowdhury, Exam Roll: 2990 Passed 
-39 Roll: IM 19-039 Md. Tarifur Rahman Pranto, Exam Roll: 2998 Referred: Anatomy
-32 Roll: IM 19-032 SAYDA MUSHTARY SNAHA, Exam Roll: 2991 Passed 
-6 Roll: 06 NAFISA TAWFIQ, Exam Roll: 2965 Passed 
-70 Roll: 70 AFIA ZAHIN AURIN, Exam Roll: 3029 Passed 
-52 Roll: 52 WASEKA BARI JEMIMA, Exam Roll: 3011 Passed 
-66 Roll: 66 SHABE-UZ-ZAMAN, Exam Roll: 3025 Passed 
-112 Roll: 112 Mumtahina Islam, Exam Roll: 3071 Referred: Anatomy
-114 Roll: 114 KAMRAN MOAZZAM ANSARI, Exam Roll: 3073 Passed 
-107 Roll: 107 Rahimeen Aziza, Exam Roll: 3066 Passed Hons: Physio
-27 Roll: 27 MD AZIM UDDIN OPI, Exam Roll: 2986 Passed 
-90 Roll: 90 Adiba Tahrin Sohana, Exam Roll: 3049 Passed 
-11 Roll: 11 FAIRUZ MAESHA, Exam Roll: 2970 Passed 
-10 Roll: 10 ZARIN TASNIM OYSHI, Exam Roll: 2969 Passed 
-13 Roll: 13 ESHTIAQ AHAMED, Exam Roll: 2972 Passed 
-35 Roll: 035 Milka Anam Tayepa, Exam Roll: 2994 Passed 
-51 Roll: 51 NAFEES AANAN DURANTA, Exam Roll: 3010 Passed 
-23 Roll: 23 TASNUVA ISLAM RINTI, Exam Roll: 2982 Passed 
-46 Roll: 46 BIYAZID AL ARIF, Exam Roll: 3005 Passed 
-63 Roll: 063 ANADEE SARKER, Exam Roll: 3022 Referred: Anatomy
-67 Roll: 67 SYEDA TAHSIN ISHTEBA, Exam Roll: 3026 Passed 
-54 Roll: 54 HEMAL KABIRAJ SUBRO, Exam Roll: 3013 Passed 
-40 Roll: 40 TANIMA NOWSHIN KAKON, Exam Roll: 2999 Referred: Anatomy
-100 Roll: 100 MAISHA ISLAM, Exam Roll: 3059 Referred: Anatomy
-48 Roll: 48 NADIM AHMED, Exam Roll: 3007 Passed 
-20 Roll: 20 RADITA KHAN, Exam Roll: 2979 Passed 
-72 Roll: 72 SIAMA KARIM, Exam Roll: 3031 Passed 
-58 Roll: 58 MD ABDUR RAHMAN SIAM, Exam Roll: 3017 Passed 
-44 Roll: IM 19-044 ARBIN ARA ARBI, Exam Roll: 3003 Passed 
-109 Roll: 109 TASFIA KHADIZA PRIMA, Exam Roll: 3068 Passed 
-64 Roll: 64 SHRABANTY HOQUE MUMU, Exam Roll: 3023 Passed 
-93 Roll: 93 Afrin Sultana, Exam Roll: 3052 Passed 
-105 Roll: 105 JANNATUN NAHAR MITHILA, Exam Roll: 3064 Passed 
-89 Roll: 89 MUSHFIQUS SALEHEEN, Exam Roll: 3048 Passed 
-29 Roll: 29 MD.AL-SHAHRIAR ROKON, Exam Roll: 2988 Referred: Anatomy, Physiology
-111 Roll: 111 ANAN ANZUM, Exam Roll: 3070 Passed 
-84 Roll: 84 AFNAN BINTE ASAD, Exam Roll: 3043 Passed 
-110 Roll: 110 Namira Yamin Ylma, Exam Roll: 3069 Referred: Anatomy, Bio
-120 Roll: 120 Saraf Anan, Exam Roll: 3079 Passed 
-118 Roll: 118 Afif Noor Ahsan, Exam Roll: 3077 Passed 
-83 Roll: 83 SADITH AL JARIF, Exam Roll: 3042 Passed 
-2 Roll: 02 Faieka Mustahida Amjad, Exam Roll: 2961 Passed 
-12 Roll: 12 REHNUMA PERVIN RUCHIRA, Exam Roll: 2971 Passed 
-85 Roll: 85 NUSRAT REHAN MEEM, Exam Roll: 3044 Passed 
-61 Roll: 61 MOST. MOUMITA ZINNAH, Exam Roll: 3020 Passed 
-25 Roll: 25 Sumaita Zahin, Exam Roll: 2984 Passed 
-30 Roll: 30 PRANAB MALLICK, Exam Roll: 2989 Passed 
-21 Roll: 21 SABUJ BISWAS, Exam Roll: 2980 Passed 
-5 Roll: 05 SADIA AFRIN, Exam Roll: 2964 Passed Hons: Physio
-76 Roll: 76 TABASUM RAHMAN, Exam Roll: 3035 Passed 
-104 Roll: 104 Nabila Tabassum Turag, Exam Roll: 3063 Referred: Anatomy, Physiology, Bio
-62 Roll: 62 MOHAMMED TAISIR MAHMUD, Exam Roll: 3021 Passed 
-78 Roll: 78 SANJIDA RAHMAN, Exam Roll: 3037 Passed 
-60 Roll: 60 Falah Rubaiyat, Exam Roll: 3019 Referred: Anatomy, Bio
-87 Roll: 87 MD. SHAHED, Exam Roll: 3046 Passed 
-103 Roll: 103 Md. Riashad Islam, Exam Roll: 3062 Passed 
-41 Roll: 41 SUMAIYA ZAMAN ANADI, Exam Roll: 3000 Passed 
-59 Roll: IM 19-059 ANIKA AFRIN AMIN, Exam Roll: 3018 Referred: Anatomy
-75 Roll: 75 TAMZID HOSSAIN, Exam Roll: 3034 Passed 
-45 Roll: 45 TASNIM JAHAN, Exam Roll: 3004 Passed 
-34 Roll: IM 19-034 MAHERIN ZABIN, Exam Roll: 2993 Passed 
-42 Roll: 42 Jannatul Ferdous Jannat, Exam Roll: 3001 Passed 
-113 Roll: 113 SANJIDA TASNIM NAFI, Exam Roll: 3072 Passed 
-99 Roll: 99 ADEL ABDULLAH HAMID CHOWDHURY, Exam Roll: 3058 Passed 
-74 Roll: 74 MAHMIN NIGER, Exam Roll: 3033 Passed 
-95 Roll: 95 MONALISA SALAM, Exam Roll: 3054 Passed 
-57 Roll: IM 19-057 M. Rakibul Hasan, Exam Roll: 3016 Referred: Anatomy
-16 Roll: 16 SYEDA SARAF WAMIA, Exam Roll: 2975 Passed 
-96 Roll: 96 Sabrina Shatila, Exam Roll: 3055 Referred: Anatomy, Bio
-82 Roll: 82 CHOWDHURY REHNUMA TAHSIN, Exam Roll: 3041 Passed 
-50 Roll: 50 ANIKA RAHMAN, Exam Roll: 3009 Passed 
-22 Roll: 22 MD SHAINUL HASSAN SAGOR, Exam Roll: 2981 Passed 
-28 Roll: 28 RAISA IBNAT PARSA, Exam Roll: 2987 Passed 
-8 Roll: 8 NABID BIN HASAN AOMY, Exam Roll: 2967 Passed 
-73 Roll: 73 SADEKUL ISLAM, Exam Roll: 3032 Passed 
-97 Roll: 97 Arnob Ghosh, Exam Roll: 3056 Passed 
-4 Roll: 04 SHAIKH FAHIM ABRAR, Exam Roll: 2963 Passed 
-80 Roll: 80 MORIUM AKTER ROSHNI, Exam Roll: 3039 Passed 
-77 Roll: 77 MUHAMMAD MUSHFIQUR RAHMAN, Exam Roll: 3036 Passed 
-53 Roll: 53 JANNATUL FERDOUS BIVA, Exam Roll: 3012 Passed 
-69 Roll: 69 MOHAMMAD JIAD ISHAQUE, Exam Roll: 3028 Passed 
-19 Roll: 19 PRACHI SAHA, Exam Roll: 2978 Passed 
-1 Roll: 01 AFIA ZAHIN ISLAM, Exam Roll: 2960 Passed 
-81 Roll: 81 MARUFA ROKONI LETHE, Exam Roll: 3040 Referred: Anatomy
-116 Roll: 116 NAFISA ISLAM NUHA, Exam Roll: 3075 Referred: Anatomy
-92 Roll: 92 IMRANUZZAMAN, Exam Roll: 3051 Referred: Anatomy
-33 Roll: IM 19-033 MARIA FERDOWS, Exam Roll: 2992 Passed 
-49 Roll: IM 19-049 SUMYA FERDOUSE, Exam Roll: 3008 Passed 
-115 Roll: 115 PRABHAS DANGI, Exam Roll: 3074 Referred: Anatomy
-36 Roll: IM 19-036 S. M. ASFI HOQUE, Exam Roll: 2995 Passed 
-119 Roll: 119 SUHALA SHUHRAT HAQUE, Exam Roll: 3078 Referred: Anatomy
-18 Roll: 18 MASNUNA MOSTOFA TASNIM, Exam Roll: 2977 Passed 
-91 Roll: 91 ADIBA TASNIM, Exam Roll: 3050 Passed 
-7 Roll: 7 Zarin Rushne Prome, Exam Roll: 2966 Passed 
-94 Roll: 94 Noshin Anjum, Exam Roll: 3053 Passed 
-71 Roll: 71 MD. ZARIF SHAHRIAR, Exam Roll: 3030 Referred: Anatomy
-106 Roll: 106 TIRTHA SIMANTA, Exam Roll: 3065 Passed 
-47 Roll: 47 NOWEL NOOREN ZERIN, Exam Roll: 3006 Passed 
-24 Roll: 24 Eram Faizah, Exam Roll: 2983 Passed Hons: Ana
-3 Roll: 03 MASUMA NABILA RAHMAN, Exam Roll: 2962 Passed 
-102 Roll: 102 Maher Ashab Khan, Exam Roll: 3061 Passed 
+21  Results were not published. 
+64  Results were not published. 
+74  Results were not published. 
+33  Results were not published. 
+76  Results were not published. 
+12  Results were not published. 
+19  Results were not published. 
+6  Results were not published. 
+89  Results were not published. 
+101  Results were not published. 
+118  Results were not published. 
+35  Results were not published. 
+108  Results were not published. 
+116  Results were not published. 
+26  Results were not published. 
+47  Results were not published. 
+41  Results were not published. 
+75  Results were not published. 
+66  Results were not published. 
+73  Results were not published. 
+54  Results were not published. 
+70  Results were not published. 
+15  Results were not published. 
+39  Results were not published. 
+61  Results were not published. 
+78  Results were not published. 
+84  Results were not published. 
+95  Results were not published. 
+10  Results were not published. 
+115  Results were not published. 
+59  Results were not published. 
+109  Results were not published. 
+103  Results were not published. 
+82  Results were not published. 
+92  Results were not published. 
+49  Results were not published. 
+20  Results were not published. 
+7  Results were not published. 
+53  Results were not published. 
+67  Results were not published. 
+58  Results were not published. 
+40  Results were not published. 
+8  Results were not published. 
+1  Results were not published. 
+22  Results were not published. 
+34  Results were not published. 
+55  Results were not published. 
+63  Results were not published. 
+79  Results were not published. 
+90  Results were not published. 
+87  Results were not published. 
+29  Results were not published. 
+44  Results were not published. 
+18  Results were not published. 
+4  Results were not published. 
+107  Results were not published. 
+25  Results were not published. 
+102  Results were not published. 
+27  Results were not published. 
+31  Results were not published. 
+94  Results were not published. 
+2  Results were not published. 
+17  Results were not published. 
+16  Results were not published. 
+14  Results were not published. 
+52  Results were not published. 
+42  Results were not published. 
+86  Results were not published. 
+30  Results were not published. 
+100  Results were not published. 
+104  Results were not published. 
+105  Results were not published. 
+96  Results were not published. 
+81  Results were not published. 
+36  Results were not published. 
+51  Results were not published. 
+28  Results were not published. 
+120  Results were not published. 
+114  Results were not published. 
+43  Results were not published. 
+117  Results were not published. 
+93  Results were not published. 
+119  Results were not published. 
+71  Results were not published. 
+38  Results were not published. 
+57  Results were not published. 
+110  Results were not published. 
+65  Results were not published. 
+72  Results were not published. 
+83  Results were not published. 
+32  Results were not published. 
+69  Results were not published. 
+88  Results were not published. 
+97  Results were not published. 
+3  Results were not published. 
+113  Results were not published. 
+62  Results were not published. 
+91  Results were not published. 
+24  Results were not published. 
+98  Results were not published. 
+68  Results were not published. 
+60  Results were not published. 
+48  Results were not published. 
+85  Results were not published. 
+112  Results were not published. 
+56  Results were not published. 
+50  Results were not published. 
+77  Results were not published. 
+106  Results were not published. 
+23  Results were not published. 
+111  Results were not published. 
+99  Results were not published. 
+9  Results were not published. 
+45  Results were not published. 
+80  Results were not published. 
+13  Results were not published. 
+46  Results were not published. 
+11  Results were not published. 
+37  Results were not published. 
+5  Results were not published. 
