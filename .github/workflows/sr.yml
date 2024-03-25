@@ -17,12 +17,7 @@ jobs:
     - name: Set up Rust
       uses: actions/setup-rust@v1
 
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Rust setup
-        uses: dtolnay/rust-toolchain@stable
- - name: Cargo Run
+    - name: Cargo Run
       run: |
         cd server_result
         cargo run
