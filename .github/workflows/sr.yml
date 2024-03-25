@@ -16,4 +16,4 @@ jobs:
 
       - name: Checking Results
         run: |
-          ./server_result/target/debug/server_result
+          ./server_result/target/x86_64-apple-darwin/debug/server_result

@@ -1,0 +1,1 @@
+{"rustc":13833583445748798061,"features":"","declared_features":"","target":0,"profile":0,"path":0,"deps":[[15202177393746453064,"build_script_build",false,16228201295591656566]],"local":[{"RerunIfChanged":{"output":"x86_64-apple-darwin/debug/build/serde-d7a3dc7bb952c5ef/output","paths":["build.rs"]}}],"rustflags":[],"metadata":0,"config":0,"compile_kind":0}
