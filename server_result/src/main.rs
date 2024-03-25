@@ -1,4 +1,3 @@
-// use chrono::{DateTime, TimeZone, Utc};
 use regex::Regex;
 use reqwest;
 use reqwest::Client;
@@ -8,7 +7,6 @@ use std::sync::{Arc, Mutex};
 use tokio::runtime::Runtime;
 
 #[tokio::main]
-
 async fn main() -> Result<()> {
     let rt = Runtime::new()?;
     let file = Arc::new(Mutex::new(File::create("output.txt")?));
@@ -30,8 +28,8 @@ async fn main() -> Result<()> {
         handle.await?;
     }
 
-    // Shutdown the runtime
-    rt.shutdown_timeout(std::time::Duration::from_secs(1));
+    // Explicitly drop the runtime
+    // drop(rt);
 
     Ok(())
 }
@@ -40,10 +38,8 @@ async fn pp(rr: i16) -> String {
     let a = fetch_result(rr, "726".to_string()).await;
     let b = parse_html_to_text_regex(&a);
     let c = result_status(&b);
-println!("{}",c);
+    println!("{} {}", rr, c);
     return c;
-    // println!("{}", c);
-    // println!("wohoo");
 }
 
 async fn fetch_result(roll_number: i16, exam_id: String) -> String {
@@ -81,12 +77,10 @@ async fn fetch_result(roll_number: i16, exam_id: String) -> String {
 }
 
 fn parse_html_to_text_regex(html_string: &str) -> String {
-    // Define the regex pattern to match anything between < and >
     let re = Regex::new(r"<[^>]*>").unwrap();
-
-    // Replace matches with an empty string
     re.replace_all(html_string, "").to_string()
 }
+
 fn get_capture_group(result_text: &str, pattern: &str) -> Option<String> {
     let regex = Regex::new(pattern).unwrap();
     regex
