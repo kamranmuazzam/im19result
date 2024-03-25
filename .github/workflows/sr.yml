@@ -3,7 +3,7 @@ name: Cargo Run on macOS
 on:
   push:
     branches:
-      - main  # Modify this to match your branch name
+      - main # Modify this to match your branch name
 
 jobs:
   pentagon:
@@ -11,14 +11,9 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Install Rust
-      run: |
-        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-
-    - name: Cargo Run
-      run: |
-        cd server_result
-        cargo run
+      - name: Checking Results
+        run: |
+          ./server_result/target/debug/server_result
