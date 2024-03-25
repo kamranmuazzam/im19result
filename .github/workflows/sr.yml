@@ -1,0 +1,23 @@
+name: Cargo Run on macOS
+
+on:
+  push:
+    branches:
+      - main  # Modify this to match your branch name
+
+jobs:
+  build:
+    name: Build and Run
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Rust
+      uses: actions/setup-rust@v1
+
+    - name: Cargo Run
+      run: |
+        cd server_result
+        cargo run
