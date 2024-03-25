@@ -6,7 +6,7 @@ on:
       - main  # Modify this to match your branch name
 
 jobs:
-  build:
+  pentagon:
     name: Build and Run
     runs-on: macos-latest
 
@@ -17,7 +17,12 @@ jobs:
     - name: Set up Rust
       uses: actions/setup-rust@v1
 
-    - name: Cargo Run
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Rust setup
+        uses: dtolnay/rust-toolchain@stable
+ - name: Cargo Run
       run: |
         cd server_result
         cargo run
