@@ -7,7 +7,7 @@ on:
 
 jobs:
   pentagon:
-    name: Setting up environment
+    name: run on mac
     runs-on: macos-latest
 
     steps:
