@@ -9,6 +9,12 @@ jobs:
   pentagon:
     name: run on mac
     runs-on: macos-latest
+    strategy:
+      matrix:
+        repeat:
+          - 1
+          - 2
+          - 3
 
     steps:
       - name: Checkout code

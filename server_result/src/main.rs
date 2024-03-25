@@ -6,8 +6,15 @@ use std::io::{Result, Write};
 use std::sync::{Arc, Mutex};
 use tokio::runtime::Runtime;
 
+fn main() {
+    let _ = tain().unwrap_or(());
+    // tain().unwrap_or_else(|err| {
+    //     // Optionally handle or log the error here
+    //     println!("Ignoring error");
+    // });
+}
 #[tokio::main]
-async fn main() -> Result<()> {
+async fn tain() -> Result<()> {
     let rt = Runtime::new()?;
     let file = Arc::new(Mutex::new(File::create("output.txt")?));
     let mut handles = Vec::new();
@@ -30,6 +37,8 @@ async fn main() -> Result<()> {
 
     // Explicitly drop the runtime
     // drop(rt);
+    // sleep
+    std::thread::sleep(std::time::Duration::from_secs(1));
 
     Ok(())
 }
