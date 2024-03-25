@@ -40,6 +40,7 @@ async fn pp(rr: i16) -> String {
     let a = fetch_result(rr, "726".to_string()).await;
     let b = parse_html_to_text_regex(&a);
     let c = result_status(&b);
+println!("{}",c);
     return c;
     // println!("{}", c);
     // println!("wohoo");
