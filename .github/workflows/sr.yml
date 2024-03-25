@@ -1,4 +1,4 @@
-name: Cargo Run on macOS
+name: Update Result of IM-19
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   pentagon:
-    name: Build and Run
+    name: Setting up environment
     runs-on: macos-latest
 
     steps:
