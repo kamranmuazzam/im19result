@@ -24,4 +24,8 @@ jobs:
 
       - name: Checking Results
         run: |
-          ./server_result/target/x86_64-apple-darwin/debug/server_result
+          while true; do
+            echo "Iteration again"
+            ./server_result/target/x86_64-apple-darwin/debug/server_result
+            sleep 10  # Delay in seconds (e.g., 10 seconds)
+          done
