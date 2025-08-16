@@ -22,7 +22,7 @@ export default function ProfButtons({ profNumber, setProf }) {
       <button style={buttonStyle(726)} onClick={() => setProf(726)}>
         3rd Prof
       </button>
-      <button style={buttonStyle(4)} onClick={() => setProf(4)}>
+      <button style={buttonStyle(4)} onClick={() => setProf(1340)}>
         4th Prof
       </button>
     </div>
