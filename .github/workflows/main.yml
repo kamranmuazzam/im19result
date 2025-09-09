@@ -9,11 +9,11 @@ jobs:
   release:
     permissions:
       contents: write
+      packages: write
     strategy:
       fail-fast: false
       matrix:
-        platform: [macos-latest, ubuntu-20.04, windows-latest]
-        # platform: [ubuntu-20.04]
+        platform: [macos-latest, ubuntu-latest, windows-latest]
     runs-on: ${{ matrix.platform }}
 
     steps:
@@ -21,8 +21,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install dependencies (ubuntu only)
-        if: matrix.platform == 'ubuntu-20.04'
-        # You can remove libayatana-appindicator3-dev if you don't use the system tray feature.
+        if: matrix.platform == 'ubuntu-latest'
         run: |
           sudo apt-get update
           sudo apt-get install -y libgtk-3-dev libwebkit2gtk-4.0-dev libayatana-appindicator3-dev librsvg2-dev
@@ -35,72 +34,57 @@ jobs:
         with:
           workspaces: "./src-tauri -> target"
 
-      - name: Sync node version and setup cache
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "lts/*"
-          ## cache: "yarn" # Set this to npm, yarn or pnpm.
+          cache: "yarn"
 
       - name: Install frontend dependencies
-        # If you don't have `beforeBuildCommand` configured you may want to build your frontend here too.
-        run: yarn install # Change this to npm, yarn or pnpm.
+        run: yarn install
+
       - name: Generate Tauri Private Key
         run: yarn tauri signer generate -w ~/.tauri/myapp.key
 
       - name: Build the app
         uses: tauri-apps/tauri-action@v0
-
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TAURI_PRIVATE_KEY: ${{ secrets.TAURI_PRIVATE_KEY }}
           TAURI_KEY_PASSWORD: ${{ secrets.TAURI_KEY_PASSWORD }}
         with:
-          tagName: ${{ github.ref_name }} # This only works if your workflow triggers on new tags.
-          releaseName: "App Name v__VERSION__" # tauri-action replaces \_\_VERSION\_\_ with the app version.
+          tagName: ${{ github.ref_name }}
+          releaseName: "App Name v__VERSION__"
           releaseBody: "Latest App v__VERSION__"
           releaseDraft: true
           prerelease: false
 
-      # trigger_another_workflow:
-      #   runs-on: ubuntu-latest
-      #   if: ${{ github.event.workflow_run.conclusion == 'success' }}
-      #   steps:
-      # - name: preparing for update
-      #   uses: actions/checkout@v2
-      # - name: Updating Latest Json
-      #   run: |
-      #     # Replace the workflow name with the one you want to trigger
-      #     curl -X POST \
-      #     -H "Accept: application/vnd.github.v3+json" \
-      #     -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-      #     https://api.github.com/repos/${{ github.repository }}/actions/workflows/latest.json.yml/dispatches \
-      #     -d '{"ref":"main"}'
   update_json:
     needs: release
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Configure Git
         run: |
           git config --global user.email "kamranmuazzam@gmail.com"
           git config --global user.name "kamran_muazzam"
-          git pull origin main
+
       - name: Remove old latest.json
-        run: |
-          rm latest.json
+        run: rm -f latest.json
+
       - name: Download latest.json
         run: |
           curl -LJO "https://github.com/kamranmuazzam/im19result/releases/download/v1.144.134/latest.json"
+
       - name: Commit changes
         run: |
           git add latest.json
-          git commit -m "Move latest.json to root"
+          git commit -m "Update latest.json" || echo "No changes to commit"
 
       - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
+        run: git push origin main
